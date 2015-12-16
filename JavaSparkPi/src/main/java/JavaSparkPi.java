@@ -24,7 +24,7 @@ import org.apache.spark.api.java.function.Function2;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
  * Computes an approximation to pi
  * Usage: JavaSparkPi [slices]
  * Compile as JAR, run spark-submit bin, then look for result in terminal
@@ -64,7 +64,7 @@ public final class JavaSparkPi {
                 }
         });
 
-        System.out.println("Pi is roughly " + 4.0 * count / n);
+        System.out.println("\n\n\nPi is roughly " + 4.0 * count / n +"\n\n\n");
 
         jsc.stop();
     }

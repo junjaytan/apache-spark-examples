@@ -1,25 +1,16 @@
-group 'com.junjaytan'
+group 'com.junjaytan.spark'
 version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
-apply plugin: 'application'
 
 sourceCompatibility = 1.8
-
-
-mainClassName = "JavaSparkPi"
 
 jar {
     manifest {
         attributes (
-                "Implementation-Title": "Spark Pi example",
-                'Main-Class': 'JavaSparkPi')
+                "Implementation-Title": "Spark Word Count example",
+                'Main-Class': 'JavaWordCount')
     }
-}
-
-task execute(type:JavaExec) {
-    main = mainClassName
-    classpath = sourceSets.main.runtimeClasspath
 }
 
 repositories {
